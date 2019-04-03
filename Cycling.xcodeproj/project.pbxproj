@@ -19,6 +19,9 @@
 		0810705022548A9300C073B7 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0810704E22548A9300C073B7 /* SigninViewController.swift */; };
 		0810705122548A9300C073B7 /* SigninViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0810704F22548A9300C073B7 /* SigninViewController.xib */; };
 		0810705422548C9E00C073B7 /* UIView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0810705322548C9E00C073B7 /* UIView+Xib.swift */; };
+		081070562254B12100C073B7 /* UIViewController+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081070552254B12100C073B7 /* UIViewController+Xib.swift */; };
+		081070582254B6EF00C073B7 /* Bundle+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081070572254B6EF00C073B7 /* Bundle+Xib.swift */; };
+		0810705B2254BDFF00C073B7 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0810705A2254BDFF00C073B7 /* AppViewModel.swift */; };
 		BB10984BAA4929609B41C4C9 /* Pods_Cycling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 555AD5113406E6CA11E3E3CC /* Pods_Cycling.framework */; };
 		E660E823BD256E6833F97D74 /* Pods_CyclingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DDA485B0C9CD86DAD23F3AF /* Pods_CyclingTests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +61,9 @@
 		0810704E22548A9300C073B7 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		0810704F22548A9300C073B7 /* SigninViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SigninViewController.xib; sourceTree = "<group>"; };
 		0810705322548C9E00C073B7 /* UIView+Xib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Xib.swift"; sourceTree = "<group>"; };
+		081070552254B12100C073B7 /* UIViewController+Xib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Xib.swift"; sourceTree = "<group>"; };
+		081070572254B6EF00C073B7 /* Bundle+Xib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Xib.swift"; sourceTree = "<group>"; };
+		0810705A2254BDFF00C073B7 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		27974C0F14237D93D025E01E /* Pods-CyclingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyclingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CyclingTests/Pods-CyclingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		33B4AB8DC3402AE85889ABFE /* Pods-Cycling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cycling.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cycling/Pods-Cycling.release.xcconfig"; sourceTree = "<group>"; };
 		4F98A7785F5177043459C9B4 /* Pods-CyclingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyclingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CyclingUITests/Pods-CyclingUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +167,7 @@
 		081070412254682B00C073B7 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				081070592254BDE400C073B7 /* AppViewModel */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -246,8 +253,18 @@
 			isa = PBXGroup;
 			children = (
 				0810705322548C9E00C073B7 /* UIView+Xib.swift */,
+				081070552254B12100C073B7 /* UIViewController+Xib.swift */,
+				081070572254B6EF00C073B7 /* Bundle+Xib.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		081070592254BDE400C073B7 /* AppViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0810705A2254BDFF00C073B7 /* AppViewModel.swift */,
+			);
+			path = AppViewModel;
 			sourceTree = "<group>";
 		};
 		37890E97FD7BA64324EADE88 /* Pods */ = {
@@ -504,9 +521,12 @@
 			files = (
 				0810705022548A9300C073B7 /* SigninViewController.swift in Sources */,
 				0810705422548C9E00C073B7 /* UIView+Xib.swift in Sources */,
+				0810705B2254BDFF00C073B7 /* AppViewModel.swift in Sources */,
 				08107015225467F900C073B7 /* UserViewController.swift in Sources */,
 				08107013225467F900C073B7 /* AppDelegate.swift in Sources */,
 				0810704B22546FC600C073B7 /* Keychain.swift in Sources */,
+				081070582254B6EF00C073B7 /* Bundle+Xib.swift in Sources */,
+				081070562254B12100C073B7 /* UIViewController+Xib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

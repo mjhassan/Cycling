@@ -15,14 +15,18 @@ import MagicalRecord
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    private var viewModel: AppViewModel?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         Fabric.with([Crashlytics.self])
         MagicalRecord.setupCoreDataStack(withStoreNamed: "JourneyModel")
         
+        Keychain.deleteSecret(forAccount: "access_token")
+        viewModel = AppViewModel.shared
+        viewModel?.setInitialViewController()
         
+        configureAppearance()
         
         return true
     }
@@ -53,15 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
-    func loadViewController() {
-        if let token = Keychain.secret(forAccount: "access_token"), !token.isEmpty {
-            print("Token found: \(token)")
-        } else {
-            
-        }
-    }
-    
-    func configureAppearance() {
+    fileprivate func configureAppearance() {
         
     }
 }

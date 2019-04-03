@@ -10,9 +10,17 @@ import UIKit
 
 class UserViewController: UIViewController {
 
+    override var prefersStatusBarHidden: Bool {
+        return false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = false
     }
 }
 
